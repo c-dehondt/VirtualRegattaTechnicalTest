@@ -4,6 +4,8 @@ using static Shared.Models.Todo;
 
 namespace GameServicesAPI.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class TodoController : Controller
     {
         //public IActionResult Index()
