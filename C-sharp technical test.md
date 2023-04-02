@@ -14,11 +14,7 @@ Some issues are present in the snippets, we expect you to describe why :
 - There's no response from `TodoController.Create` which isn't good practice too.
 - Feel free to point out any issues you found or things to optimize/improve.
 
-Exemple of request :
 
-```sh
-curl -X POST http://localhost:5035/todo/create -H 'Content-Type: application/json' -d '{"Title": "Do the technical test","IsDone":false,"OwnerKey":"f8e3b1cb-45f6-442a-ab12-f66bd61a9df8"}'
-```
 
 The idea is to spend at most 3~4 hours on this test. Feel free to add anything which sounds interesting for you. We don't expect a finished test (should run at least), but we will look at how you handle a profesionnal project from scratch (what are your priorities and what you do and don't do).
 
