@@ -3,6 +3,7 @@ using Orleans.Runtime;
 using Shared.Grains;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,12 +35,15 @@ namespace GameSilos.Grains
             _logger.LogInformation(
                 "{@GrainType} {@GrainKey} now contains {@Todo}",
                 GrainType, GrainKey, item);
+
+           
         }
 
         [GenerateSerializer]
         public class State
         {
-            [Id(0)] public TodoItem? Item { get; set; }
+            [Id(0)] 
+            public TodoItem? Item { get; set; }
         }
     }
 }
